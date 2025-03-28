@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import '../styles/layout.css';
 
 export default function Layout() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function Layout() {
              location.pathname.includes('/issues') ? 'Issues' : 'Search'}
           </span>
           <button className="dark-mode-toggle" onClick={() => setDarkMode(!darkMode)}>
-            {darkMode ? '☀️' : '🌙'}
+            {darkMode ? '🌞' : '🌚'}
           </button>
         </div>
       </header>
