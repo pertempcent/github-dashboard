@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #111;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  body.dark {
+    background-color: #111;
+    color: #f0f0f0;
+  }
+  
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3 {
+    margin-top: 0;
+  }
+  
+  ul {
+    padding-left: 1.2rem;
+  }
+  
+  /* Spinner - ADD this at the end */
+  .spinner {
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ccc;
+    border-top-color: #007acc;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+  }
+  
+  body.dark .spinner {
+    border-color: #333;
+    border-top-color: #fff;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
